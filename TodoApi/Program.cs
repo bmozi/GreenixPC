@@ -4,7 +4,6 @@
 
 using Microsoft.EntityFrameworkCore; 
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
@@ -14,21 +13,23 @@ builder.Services.AddDbContext<TodoContext>(options =>
 builder.Services.AddScoped<ITodoService, TodoService>();    // Dependency Injection
 builder.Services.AddControllers(); 
 
+builder.Services.AddEndpointsApiExplorer(); 
+builder.Services.AddSwaggerGen();    
 
 var app = builder.Build();
-
-// Exception handling middleware
-app.UseExceptionHandler("/error");
 
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage();
+    app.UseSwagger();  // Swagger middleware
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
+        options.RoutePrefix = string.Empty; // This serves Swagger UI at the root
+    });
 }
 
-app.UseHttpsRedirection();
 app.UseAuthorization();
-
 app.MapControllers(); 
 
 app.Run();

@@ -32,3 +32,9 @@
 /Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/obj/Debug/net9.0/TodoApi.pdb
 /Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/obj/Debug/net9.0/TodoApi.genruntimeconfig.cache
 /Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/obj/Debug/net9.0/ref/TodoApi.dll
+/Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/briggs/Xcode/SourceCode/GreenixPC/TodoApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
